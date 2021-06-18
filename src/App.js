@@ -21,7 +21,7 @@ function App() {
 
   const handleSelectCat = (catId) => {
     const foundCat = localCatData.find((cat) => cat.id === catId);
-    foundCat.likes += 1;
+    foundCat.viewscount += 1;
     setSelectedCatData(foundCat);
   };
 
@@ -32,10 +32,6 @@ function App() {
     setSelectedCatData(null);
   };
 
-  const updateCatt = (catId) => {
-    setLocalCatData(localCatData.filter((cat) => cat.id !== catId));
-    setSelectedCatData(null);
-  };
 
 
 

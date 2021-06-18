@@ -2,44 +2,41 @@
   {
     "id": 1,
     "name": "Sam",
-    "birthday": "2018-10-02",
-    "ownerName": "Liz Drumm",
+    "birthdate": "2018-10-02",
+    "owner name": "Liz Drumm",
     "thumbnailUrl": "https://images.unsplash.com/photo-1596854273338-cbf078ec7071?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-
-    "likes": 0
+    "viewscount": 0
   },
   {
     "id": 2,
     "name": "Kitty",
-    "birthday": "2016-01-01",
-    "ownerName": "Jane Smith",
+    "birthdate": "2016-01-01",
+    "owner name": "Jane Smith",
     "thumbnailUrl": "https://images.unsplash.com/photo-1615497001839-b0a0eac3274c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80",
-
-    "likes": 0
+    "viewscount": 0
   },
   {
     "id": 3,
     "name": "Felix",
-    "birthday": "2011-01-10",
-    "ownerName": "Sam Jones",
+    "birthdate": "2011-01-10",
+    "owner name": "Sam Jones",
     "thumbnailUrl": "https://images.unsplash.com/photo-1607242792481-37f27e1d74e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80",
-    "likes": 0
+    "viewscount": 0
   },
   {
     "id": 4,
     "name": "Garfield",
-    "birthday": "2020-02-10",
-    "ownerName": "Claire Morrison",
+    "birthdate": "2020-02-10",
+    "owner name": "Claire Morrison",
     "thumbnailUrl": "https://images.unsplash.com/photo-1604675223954-b1aabd668078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80",
-
-    "likes": 0
+    "viewscount": 0
   },
   {
     "id": 5,
     "name": "Poppy",
-    "birthday": "2014-11-11",
-    "ownerName": "Daniel Parry",
+    "birthdate": "2014-11-11",
+    "owner name": "Daniel Parry",
     "thumbnailUrl": "https://images.unsplash.com/photo-1580784355694-0d5295dcc007?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80",
-    "likes": 0
+    "viewscount": 0
   }
 ]

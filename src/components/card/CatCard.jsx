@@ -23,10 +23,10 @@ export function CatCard({ cat, handleDeleteCat }) {
                 {cat.name}
               </Card.Title>
             </div>
-            <Card.Text className="text-secondary">{cat.birthday}</Card.Text>
+            <Card.Text className="text-secondary">{cat.birthdate}</Card.Text>
 
             <Card.Text>
-              Owner: {cat.ownerName} <br /> Number of views: {cat.likes} time(s) <br />
+              Owner: {cat["owner name"]} <br /> Number of views: {cat.viewscount} time(s) <br />
               <div className="button-section">
                 <>
                   <Button className="edit" onClick={handleShow}>

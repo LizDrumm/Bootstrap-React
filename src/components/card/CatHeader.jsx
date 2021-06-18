@@ -6,9 +6,9 @@ import { format } from "date-fns";
 export function CatHeader({ cat }) {
 
   // gets the date in right order, but day is off by 1 day
-  let date = new Date(cat.birthday)
-  var formattedDate = format(date, "dd MMMM yyyy")
-  console.log('formatteddate', formattedDate)
+  // let date = new Date(cat.birthday)
+  // var formattedDate = format(date, "dd MMMM yyyy")
+  // console.log('formatteddate', formattedDate)
 
 
 
@@ -22,8 +22,8 @@ export function CatHeader({ cat }) {
         />
         <Card.Body className="card-body">
           <div className="section">
-            <Card.Title className="font-weight-bold">{cat.name} <br/> {cat.birthday}</Card.Title>
-            {/* <div className="birthday">{cat.birthday}</div> */}
+            <Card.Title className="font-weight-bold">{cat.name} <br/> {cat.birthdate}</Card.Title>
+          
           </div>
         </Card.Body>
       </Card>
