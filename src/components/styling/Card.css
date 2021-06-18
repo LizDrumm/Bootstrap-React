@@ -1,0 +1,29 @@
+.button-section{
+  display: flex;
+  justify-content: flex-end;
+ 
+}
+.edit, .delete, .save, .cancel{
+
+  background-color: white;
+  color:#000000;
+  border:none;
+  
+}
+
+
+@media only screen and (max-width: 768px) {
+  a {
+    display: none;
+  }
+  .card-body {
+    padding: 0.5em 1.2em;
+  }
+  .card-body .card-text {
+    margin: 0;
+  }
+ 
+}
+@media only screen and (max-width: 1200px) {
+  
+}

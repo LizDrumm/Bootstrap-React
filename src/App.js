@@ -1,27 +1,58 @@
-import React, {useState} from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.css';
-import {CatList} from './components/CatList';
-import {Container, Row, Col} from 'react-bootstrap';
-import cats from './data';
-import {CatCard} from './components/CatCard';
-import {Confirmation} from './components/CatList';
-import {SearchBar} from './components/SearchBar'
+import React, { useEffect, useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import { CatList } from "./components/card/CatList";
+import { EditForm } from "./components/EditForm";
+import { Container } from "react-bootstrap";
+import { SearchBar } from "./components/SearchBar";
+import cats from "./data.json";
+import { CSVLink } from "react-csv";
+import { CatCard } from "./components/card/CatCard";
+
 function App() {
+  const [localCatData, setLocalCatData] = useState([]);
+  const [selectedCatData, setSelectedCatData] = useState(null);
 
-const [open, setOpen] = useState(false);
 
-function displayCard(){
-  setOpen(true);
-}
+  useEffect(() => {
+    setLocalCatData(cats);
+    setSelectedCatData(cats[0]);
+  }, []);
+
+  const handleSelectCat = (catId) => {
+    const foundCat = localCatData.find((cat) => cat.id === catId);
+    foundCat.likes += 1;
+    setSelectedCatData(foundCat);
+  };
+
+  //splice might be better as it will take less time and not need to map through entire data structure
+  //filter wouldn't be great for a larger set of data where id might be unique
+  const handleDeleteCat = (catId) => {
+    setLocalCatData(localCatData.filter((cat) => cat.id !== catId));
+    setSelectedCatData(null);
+  };
+
+  const updateCatt = (catId) => {
+    setLocalCatData(localCatData.filter((cat) => cat.id !== catId));
+    setSelectedCatData(null);
+  };
+
+
 
   return (
     <>
-   <Container>
-     <SearchBar/>
-     <CatList/>
-   </Container>
-   </>
+      <Container>
+        <div className="main-div">
+          <div className="second-div">
+            <SearchBar />
+            <CatList handleSelectCat={handleSelectCat} cats={localCatData} />
+          </div>
+
+          <CatCard cat={selectedCatData} handleDeleteCat={handleDeleteCat} />
+        </div>
+        
+      </Container>
+    </>
   );
 }
 
