@@ -4,11 +4,15 @@
  
 }
 .edit, .delete, .save, .cancel{
-
+  padding: 0rem;
+  margin:1rem;
   background-color: white;
   color:#000000;
   border:none;
   
+}
+.card-body{
+  padding: .5rem;
 }
 
 

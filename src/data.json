@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Sam",
-    "birthday": "2018-10-2",
+    "birthday": "2018-10-02",
     "ownerName": "Liz Drumm",
     "thumbnailUrl": "https://images.unsplash.com/photo-1596854273338-cbf078ec7071?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
 
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "name": "Kitty",
-    "birthday": "2016-24-4",
+    "birthday": "2016-01-01",
     "ownerName": "Jane Smith",
     "thumbnailUrl": "https://images.unsplash.com/photo-1615497001839-b0a0eac3274c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80",
 
