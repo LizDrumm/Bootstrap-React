@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
-
+import {CatList} from './components/CatList';
+import {Container, Row, Col} from 'react-bootstrap';
+import cats from './data';
+import {CatCard} from './components/CatCard';
+import {Confirmation} from './components/CatList';
+import {SearchBar} from './components/SearchBar'
 function App() {
+
+const [open, setOpen] = useState(false);
+
+function displayCard(){
+  setOpen(true);
+}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+   <Container>
+     <SearchBar/>
+     <CatList/>
+   </Container>
+   </>
   );
 }
 
